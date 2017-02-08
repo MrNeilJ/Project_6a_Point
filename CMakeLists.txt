@@ -3,5 +3,5 @@ project(point)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp Point.cpp Point.hpp)
 add_executable(point ${SOURCE_FILES})
