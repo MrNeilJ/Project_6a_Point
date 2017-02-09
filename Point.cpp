@@ -17,12 +17,14 @@
 
 
 
-Point::Point(double x, double y) {
-
+Point::Point(double inputX, double inputY) {
+    x = inputX;
+    y = inputY;
 }
 
 Point::Point() {
-
+    x = 0;
+    y = 0;
 }
 
 // Getter Functions
