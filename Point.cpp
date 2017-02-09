@@ -11,6 +11,9 @@
  *  Point p1(-1.5, 0.0);
  *  Point p2(1.5, 4.0);
  *  double dist = p1.distanceTo(p2);
+ *
+ *  FORMULA NEEDED:
+ *  d = sqrt((x2 - x1)^2 + (y2 - y1)^2)
 */
 
 #include "Point.hpp"
