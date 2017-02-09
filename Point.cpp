@@ -24,3 +24,25 @@ Point::Point(double x, double y) {
 Point::Point() {
 
 }
+
+// Getter Functions
+double Point::getX()
+{
+    return x;
+}
+
+double Point::getY()
+{
+    return y;
+}
+
+// Setter Functions
+double Point::setX(double input)
+{
+    x = input;
+}
+
+double Point::setY(double input)
+{
+    y = input;
+}

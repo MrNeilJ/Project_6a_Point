@@ -31,6 +31,16 @@ public:
     // Typical constructor used when creating the object
     Point(double, double);
 
+    // Getter Functions
+    double getX();
+
+    double getY();
+
+    // Setter Functions
+    double setX(double input);
+
+    double setY(double input);
+
     // Measures the distance between two different points
     double distanceTo(Point obj1, Point obj2);
 
