@@ -17,7 +17,7 @@ LineSegment::LineSegment()
 LineSegment::LineSegment(Point obj1, Point obj2)
 {
      end1 = obj1;
-     end2 = obj1;
+     end2 = obj2;
 }
 
 void LineSegment::setEnd1(Point input)

@@ -36,7 +36,6 @@ public:
 
     // Getter Functions
     double getXCoord();
-
     double getYCoord();
 
     // Setter Functions

@@ -12,9 +12,10 @@ private:
     Point end2;
 
 public:
-    // CONSTRUCTORS
+
     // Blank Constructor
     LineSegment();
+
     // Filled Constructor
     LineSegment(Point obj1, Point obj2);
 
