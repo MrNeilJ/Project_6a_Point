@@ -8,8 +8,8 @@
 
 class LineSegment {
 private:
-    Point spot1;
-    Point spot2;
+    Point end1;
+    Point end2;
 
 public:
     // CONSTRUCTORS

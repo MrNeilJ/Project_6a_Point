@@ -1,45 +1,44 @@
-//
-// Created by Scrup on 2/9/2017.
-//
+
+
+
 
 #include "LineSegment.hpp"
-#include "Point.hpp"
 
 LineSegment::LineSegment()
 {
-    Point spot1(0,0);
-    Point spot2(0,0);
+    end1(0,0);
+    end2(0,0);
 }
 
 LineSegment::LineSegment(Point obj1, Point obj2)
 {
-    Point spot1(obj1.getXCoord(), obj1.getYCoord());
-    Point spot2(obj2.getXCoord(), obj2.getYCoord());
+    end1(obj1.getXCoord(), obj1.getYCoord());
+    end2(obj2.getXCoord(), obj2.getYCoord());
 }
 
 void LineSegment::setEnd1(Point input)
 {
-    spot1 = input;
+    end1 = input;
 }
 
 void LineSegment::setEnd2(Point input)
 {
-    spot2 = input;
+    end2 = input;
 }
 
 Point LineSegment::getEnd1()
 {
-    return spot1;
+    return end1;
 }
 
 Point LineSegment::getEnd2()
 {
-    return spot2;
+    return end2;
 }
 
 double LineSegment::length()
 {
-    return spot1.distanceTo(spot2);
+    return end1.distanceTo(end2);
 }
 
 // FORMULA: m = (y2 - y1) / (x2 - x1)
@@ -48,21 +47,21 @@ double LineSegment::slope()
     double  x1, y1,
             x2, y2;
 
-    if (spot1.getXCoord() < spot2.getXCoord())
+    if (end1.getXCoord() < end2.getXCoord())
     {
-        x1 = spot1.getXCoord();
-        y1 = spot1.getYCoord();
+        x1 = end1.getXCoord();
+        y1 = end1.getYCoord();
 
-        x2 = spot2.getXCoord();
-        y2 = spot2.getYCoord();
+        x2 = end2.getXCoord();
+        y2 = end2.getYCoord();
     }
     else
     {
-        x2 = spot1.getXCoord();
-        y2 = spot1.getYCoord();
+        x2 = end1.getXCoord();
+        y2 = end1.getYCoord();
 
-        x1 = spot2.getXCoord();
-        y1 = spot2.getYCoord();
+        x1 = end2.getXCoord();
+        y1 = end2.getYCoord();
     }
 
 
