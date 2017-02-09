@@ -20,13 +20,20 @@
 class Point
 {
 private:
+    double x;
+    double y;
+
 
 public:
     // Blank constructor
-    Point::Point();
+    Point();
 
     // Typical constructor used when creating the object
-    Point::Point(double, double);
+    Point(double, double);
+
+    // Measures the distance between two different points
+    double distanceTo(Point obj1, Point obj2);
+
 };
 
 
