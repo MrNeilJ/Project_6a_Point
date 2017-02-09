@@ -12,7 +12,11 @@
 #include "LineSegment.hpp"
 
 
-// Do I need a blank class call for this....?
+/**************************************************************
+ *                  LineSegment::LineSegment
+ * Description: Blank Constructor that allows the user to set
+ * default values to the internal objects for the class.
+**************************************************************/
 LineSegment::LineSegment()
 {
     end1.setXCoord(0.0);
