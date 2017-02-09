@@ -1,7 +1,14 @@
-
-
-
-
+/**************************************************************
+ * Author: Neil Johnson
+ *
+ * Date: 2.10.2017
+ *
+ * Description: This is a class file for the class Point.
+ * In this file we host the application functions for the
+ * class.  These functions allow the user to create plot points
+ * and pull coordinates from previously made objects and the
+ * distance between two points.
+**************************************************************/
 #include "LineSegment.hpp"
 
 
