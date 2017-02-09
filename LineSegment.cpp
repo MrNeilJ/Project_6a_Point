@@ -45,11 +45,26 @@ double LineSegment::length()
 // FORMULA: m = (y2 - y1) / (x2 - x1)
 double LineSegment::slope()
 {
-    double x1 = spot1.getXCoord();
-    double y1 = spot1.getYCoord();
+    double  x1, y1,
+            x2, y2;
 
-    double x2 = spot2.getXCoord();
-    double y2 = spot2.getYCoord();
+    if (spot1.getXCoord() < spot2.getXCoord())
+    {
+        x1 = spot1.getXCoord();
+        y1 = spot1.getYCoord();
+
+        x2 = spot2.getXCoord();
+        y2 = spot2.getYCoord();
+    }
+    else
+    {
+        x2 = spot1.getXCoord();
+        y2 = spot1.getYCoord();
+
+        x1 = spot2.getXCoord();
+        y1 = spot2.getYCoord();
+    }
+
 
     return (y2 - y1) / (x2 - x1);
 }
