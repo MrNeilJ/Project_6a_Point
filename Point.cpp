@@ -17,6 +17,7 @@
 */
 
 #include "Point.hpp"
+#include <cmath>
 
 
 
@@ -31,23 +32,35 @@ Point::Point() {
 }
 
 // Getter Functions
-double Point::getX()
+double Point::getXCoord()
 {
     return x;
 }
 
-double Point::getY()
+double Point::getYCoord()
 {
     return y;
 }
 
 // Setter Functions
-double Point::setX(double input)
+void Point::setXCoord(double input)
 {
     x = input;
 }
 
-double Point::setY(double input)
+void Point::setYCoord(double input)
 {
     y = input;
+}
+
+
+// FORMULA NEEDED:
+// d = sqrt((x2 - x1)^2 + (y2 - y1)^2)
+
+double Point::distanceTo(Point obj2)
+{
+    double x2 = obj2.getXCoord();
+    double y2 = obj2.getYCoord();
+
+    return sqrt(pow((x2 - x), 2.0) + pow((y2 - y), 2.0));
 }

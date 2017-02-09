@@ -11,6 +11,9 @@
  *  Point p1(-1.5, 0.0);
  *  Point p2(1.5, 4.0);
  *  double dist = p1.distanceTo(p2);
+ *
+ *  FORMULA NEEDED:
+ *  d = sqrt((x2 - x1)^2 + (y2 - y1)^2)
 */
 
 #ifndef POINT_POINT_HPP
@@ -32,17 +35,17 @@ public:
     Point(double, double);
 
     // Getter Functions
-    double getX();
+    double getXCoord();
 
-    double getY();
+    double getYCoord();
 
     // Setter Functions
-    double setX(double input);
+    void setXCoord(double input);
 
-    double setY(double input);
+    void setYCoord(double input);
 
     // Measures the distance between two different points
-    double distanceTo(Point obj1, Point obj2);
+    double distanceTo(Point obj2);
 
 };
 
