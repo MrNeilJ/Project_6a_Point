@@ -53,22 +53,41 @@ Point::Point() {
 }
 
 // Getter Functions
+/**************************************************************
+ *                  Point::getXCoord
+ * Description: Function that allows the user to get the x
+ * coordinate.
+**************************************************************/
 double Point::getXCoord()
 {
     return x;
 }
 
+/**************************************************************
+ *                  Point::getYCoord
+ * Description: unction that allows the user to get the y
+ * coordinate.
+**************************************************************/
 double Point::getYCoord()
 {
     return y;
 }
 
-// Setter Functions
+/**************************************************************
+ *                  Point::setXCoord
+ * Description: unction that allows the user to set the x
+ * coordinate.
+**************************************************************/
 void Point::setXCoord(double input)
 {
     x = input;
 }
 
+/**************************************************************
+ *                  Point::setYCoord
+ * Description: unction that allows the user to set the y
+ * coordinate.
+**************************************************************/
 void Point::setYCoord(double input)
 {
     y = input;
