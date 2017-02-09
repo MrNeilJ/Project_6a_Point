@@ -12,6 +12,8 @@ int main() {
     Point p4(1.1 , 2.2);
 
     double dist = p1.distanceTo(p2);
-    std::cout << "Distance from p3 to p4 is: " << p3.distanceTo(p4);
+
+    std::cout << "Distance from p1 to p2 is: " << dist << std::endl;
+    std::cout << "Distance from p3 to p4 is: " << p3.distanceTo(p4) << std::endl;
     return 0;
 }

@@ -26,7 +26,6 @@ private:
     double x;
     double y;
 
-
 public:
     // Blank constructor
     Point();
