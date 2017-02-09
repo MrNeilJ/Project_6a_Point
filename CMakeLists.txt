@@ -3,5 +3,5 @@ project(point)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp Point.cpp Point.hpp)
+set(SOURCE_FILES main.cpp Point.cpp Point.hpp LineSegment.cpp LineSegment.hpp)
 add_executable(point ${SOURCE_FILES})
