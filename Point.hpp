@@ -3,7 +3,7 @@
  *
  * Date: 2.10.2017
  *
- * Description: This is a class file for the class Point.
+ * Description: This is a header class file for the class Point.
  * In this file we host the application functions for the
  * class.  These functions allow the user to create plot points
  * and pull coordinates from previously made objects and the
