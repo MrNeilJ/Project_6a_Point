@@ -69,5 +69,5 @@ double LineSegment::slope()
     }
 
 
-    return (y2 - y1) / (x2 - x1);
+    return ((y2 - y1) / (x2 - x1));
 }
