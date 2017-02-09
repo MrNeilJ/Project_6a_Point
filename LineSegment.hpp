@@ -1,6 +1,4 @@
-//
-// Created by Scrup on 2/9/2017.
-//
+
 
 #ifndef POINT_LINESEGMENT_HPP
 #define POINT_LINESEGMENT_HPP
@@ -21,8 +19,8 @@ public:
     LineSegment(Point obj1, Point obj2);
 
     // Setter Functions
-    void setEnd1();
-    void setEnd2();
+    void setEnd1(Point input);
+    void setEnd2(Point input);
 
     // Getter Functions
     Point getEnd1();
