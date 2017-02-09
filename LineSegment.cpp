@@ -4,16 +4,20 @@
 
 #include "LineSegment.hpp"
 
+
+// Do I need a blank class call for this....?
 LineSegment::LineSegment()
 {
-    end1(0,0);
-    end2(0,0);
+    end1.setXCoord(0.0);
+    end1.setYCoord(0.0);
+    end2.setXCoord(0.0);
+    end2.setYCoord(0.0);
 }
 
 LineSegment::LineSegment(Point obj1, Point obj2)
 {
-    end1(obj1.getXCoord(), obj1.getYCoord());
-    end2(obj2.getXCoord(), obj2.getYCoord());
+     end1 = obj1;
+     end2 = obj1;
 }
 
 void LineSegment::setEnd1(Point input)
