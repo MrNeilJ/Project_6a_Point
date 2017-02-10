@@ -85,7 +85,6 @@ double LineSegment::length()
     return end1.distanceTo(end2);
 }
 
-// FORMULA: m = (y2 - y1) / (x2 - x1)
 /**************************************************************
  *                  LineSegment::slope
  * Description: Returns the slope from the two Points saved
