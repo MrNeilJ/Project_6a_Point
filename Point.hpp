@@ -13,8 +13,6 @@
 #ifndef POINT_POINT_HPP
 #define POINT_POINT_HPP
 
-
-
 class Point
 {
 private:

@@ -96,7 +96,11 @@ double LineSegment::slope()
     double  x1, y1,
             x2, y2;
 
-    if (end1.getXCoord() < end2.getXCoord())
+    if (end1.getXCoord() == end2.getXCoord() && end1.getYCoord() < end2.getYCoord())
+    {
+        return 0;
+    }
+    else if (end1.getXCoord() < end2.getXCoord())
     {
         x1 = end1.getXCoord();
         y1 = end1.getYCoord();

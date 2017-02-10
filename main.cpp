@@ -3,6 +3,7 @@
 #include "LineSegment.hpp"
 
 int main() {
+    /*
     Point p1(-1.5, 0.0);
     Point p2(1.5, 4.0);
 
@@ -35,6 +36,40 @@ int main() {
 
     std::cout << "Length from p7 to p8 is: " << ls2.length() << std::endl;
     std::cout << "Slope for p7 to p8 is: " << ls2.slope() << std::endl;
+
+    Point p9;
+
+    LineSegment ls3(p9,p9);
+    std::cout << "\n\nLength from p7 to p8 is: " << ls3.length() << std::endl;
+    std::cout << "Slope for p7 to p8 is: " << ls3.slope() << std::endl;
+*/
+    Point p1(-1.5, 0.0);
+    Point p2(1.5, 4.0);
+
+    std::cout << "The Values stored in Point p1 are: " << std::endl;
+    std::cout << "p1 x(" << p1.getXCoord() << ")  y(" << p1.getYCoord() << ")\n\n" << std::endl;
+
+    std::cout << "The Values stored in Point p2 are: " << std::endl;
+    std::cout << "p2 x(" << p2.getXCoord() << ")  y(" << p2.getYCoord() << ")\n\n" << std::endl;
+
+    Point p3;
+    p3.setXCoord(2.2);
+    p3.setYCoord(3.4);
+
+    std::cout << "The Values stored in Point p3 are: " << std::endl;
+    std::cout << "p3 x(" << p3.getXCoord() << ")  y(" << p3.getYCoord() << ")\n\n" << std::endl;
+
+    std::cout << "The distance between p1 and p2 is: " << p1.distanceTo(p2);
+
+    LineSegment ls1(p1, p2);
+    std::cout << "The distance between p1 and p2 is: " << ls1.length();
+    std::cout << "The slope between p1 and p2 is: " << ls1.slope();
+
+    std::cout << "The value stored in line segment part 1 is: " << ls1.getEnd1() << std::endl;
+
+
+
+
 
 
     return 0;
