@@ -84,7 +84,7 @@ double LineSegment::slope()
             x2, y2;
 
 
-    else if (end1.getXCoord() < end2.getXCoord())
+    if (end1.getXCoord() < end2.getXCoord())
     {
         x1 = end1.getXCoord();
         y1 = end1.getYCoord();

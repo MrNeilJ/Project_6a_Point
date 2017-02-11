@@ -39,7 +39,7 @@ Point::Point() {
  * Description: Function that allows the user to get the x
  * coordinate.
 **************************************************************/
-double Point::getXCoord()
+double Point::getXCoord() const
 {
     return x;
 }
@@ -49,7 +49,7 @@ double Point::getXCoord()
  * Description: Function that allows the user to get the y
  * coordinate.
 **************************************************************/
-double Point::getYCoord()
+double Point::getYCoord() const
 {
     return y;
 }
@@ -80,7 +80,7 @@ void Point::setYCoord(double input)
  * the distance between two different points.
  * FORMULA USED: d = sqrt((x2 - x1)^2 + (y2 - y1)^2)
 **************************************************************/
-double Point::distanceTo(Point &obj2) const
+double Point::distanceTo(const Point &obj2)
 {
     double x2 = obj2.getXCoord();
     double y2 = obj2.getYCoord();

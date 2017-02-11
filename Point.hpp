@@ -27,8 +27,8 @@ public:
     Point(double, double);
 
     // Getter Functions
-    double getXCoord();
-    double getYCoord();
+    double getXCoord() const;
+    double getYCoord() const;
 
     // Setter Functions
     void setXCoord(double input);
@@ -36,7 +36,7 @@ public:
     void setYCoord(double input);
 
     // Measures the distance between two different points
-    double distanceTo(Point &obj2) const;
+    double distanceTo(const Point&);
 
 };
 
