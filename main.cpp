@@ -69,6 +69,8 @@ int main() {
 
     std::cout << "\n\nThe slope stored in line segment2 is: " << ls2.slope() << std::endl;
 
+    std::cout <<"\n Is this still functional?" << std::endl;
+
 
 
 
