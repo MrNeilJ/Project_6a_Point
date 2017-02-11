@@ -62,8 +62,8 @@ int main() {
     std::cout << "The distance between p1 and p2 is: " << p1.distanceTo(p2);
 
     LineSegment ls1(p1, p2);
-    std::cout << "The distance between p1 and p2 is: " << ls1.length();
-    std::cout << "The slope between p1 and p2 is: " << ls1.slope();
+    std::cout << "\nThe distance between p1 and p2 is: " << ls1.length();
+    std::cout << "\nThe slope between p1 and p2 is: " << ls1.slope();
 
 
 
