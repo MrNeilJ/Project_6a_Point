@@ -22,11 +22,11 @@ private:
 
 public:
     // Filled Constructor
-    LineSegment(Point obj1, Point obj2);
+    LineSegment(Point &, Point &);
 
     // Setter Functions
-    void setEnd1(Point input);
-    void setEnd2(Point input);
+    void setEnd1(Point &);
+    void setEnd2(Point &);
 
     // Getter Functions
     Point getEnd1() const;

@@ -17,7 +17,7 @@
  * Description: Constructor that allows the user to set the
  * internal objects for the class.
 **************************************************************/
-LineSegment::LineSegment(Point obj1, Point obj2)
+LineSegment::LineSegment(Point &obj1, Point &obj2)
 {
      end1 = obj1;
      end2 = obj2;
@@ -28,7 +28,7 @@ LineSegment::LineSegment(Point obj1, Point obj2)
  * Description: Function that allows the user to set one of
  * the two Point Objects for the Object.
 **************************************************************/
-void LineSegment::setEnd1(Point input)
+void LineSegment::setEnd1(Point &input)
 {
     end1 = input;
 }
@@ -38,7 +38,7 @@ void LineSegment::setEnd1(Point input)
  * Description: Function that allows the user to set the other
  * of the two Point Objects for the Object of interest.
 **************************************************************/
-void LineSegment::setEnd2(Point input)
+void LineSegment::setEnd2(Point &input)
 {
     end2 = input;
 }
