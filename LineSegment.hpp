@@ -21,10 +21,6 @@ private:
     Point end2;
 
 public:
-
-    // Blank Constructor
-    LineSegment();
-
     // Filled Constructor
     LineSegment(Point obj1, Point obj2);
 
@@ -33,15 +29,12 @@ public:
     void setEnd2(Point input);
 
     // Getter Functions
-    Point getEnd1();
-    Point getEnd2();
+    Point getEnd1() const;
+    Point getEnd2() const;
 
     // Formula Functions
     double length();
     double slope();
-
-
-
 };
 
 

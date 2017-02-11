@@ -47,7 +47,7 @@ void LineSegment::setEnd2(Point input)
  *                  LineSegment::getEnd1
  * Description: Returns the first Point object back to the user.
 **************************************************************/
-Point LineSegment::getEnd1()
+Point LineSegment::getEnd1() const
 {
     return end1;
 }
@@ -57,7 +57,7 @@ Point LineSegment::getEnd1()
  * Description: Returns the second Point object back to the
  * user.
 **************************************************************/
-Point LineSegment::getEnd2()
+Point LineSegment::getEnd2() const
 {
     return end2;
 }
