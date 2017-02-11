@@ -71,6 +71,8 @@ int main() {
 
     std::cout <<"\n Is this still functional?" << std::endl;
 
+    std::cout <<"\n line segment 2 = " << ls2.getEnd1() << std::endl;
+
 
 
 
