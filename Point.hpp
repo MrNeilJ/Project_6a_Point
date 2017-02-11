@@ -36,7 +36,7 @@ public:
     void setYCoord(double input);
 
     // Measures the distance between two different points
-    double distanceTo(Point obj2);
+    double distanceTo(Point &obj2) const;
 
 };
 

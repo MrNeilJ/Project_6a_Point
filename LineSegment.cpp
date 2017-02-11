@@ -14,19 +14,6 @@
 
 /**************************************************************
  *                  LineSegment::LineSegment
- * Description: Blank Constructor that allows the user to set
- * default values to the internal objects for the class.
-**************************************************************/
-LineSegment::LineSegment()
-{
-    end1.setXCoord(0.0);
-    end1.setYCoord(0.0);
-    end2.setXCoord(0.0);
-    end2.setYCoord(0.0);
-}
-
-/**************************************************************
- *                  LineSegment::LineSegment
  * Description: Constructor that allows the user to set the
  * internal objects for the class.
 **************************************************************/
@@ -96,10 +83,7 @@ double LineSegment::slope()
     double  x1, y1,
             x2, y2;
 
-    if (end1.getXCoord() == end2.getXCoord() && end1.getYCoord() < end2.getYCoord())
-    {
-        return 0;
-    }
+
     else if (end1.getXCoord() < end2.getXCoord())
     {
         x1 = end1.getXCoord();

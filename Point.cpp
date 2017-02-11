@@ -80,7 +80,7 @@ void Point::setYCoord(double input)
  * the distance between two different points.
  * FORMULA USED: d = sqrt((x2 - x1)^2 + (y2 - y1)^2)
 **************************************************************/
-double Point::distanceTo(Point obj2)
+double Point::distanceTo(Point &obj2) const
 {
     double x2 = obj2.getXCoord();
     double y2 = obj2.getYCoord();
