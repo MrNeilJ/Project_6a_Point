@@ -32,7 +32,6 @@ public:
 
     // Setter Functions
     void setXCoord(double input);
-
     void setYCoord(double input);
 
     // Measures the distance between two different points
