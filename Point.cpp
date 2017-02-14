@@ -19,8 +19,8 @@
  * X Coordinate and Y Coordinate for that individual object
 **************************************************************/
 Point::Point(double inputX, double inputY) {
-    x = inputX;
-    y = inputY;
+    setXCoord(inputX);
+    setYCoord(inputY);
 }
 
 /**************************************************************

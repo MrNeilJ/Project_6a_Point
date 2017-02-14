@@ -19,8 +19,8 @@
 **************************************************************/
 LineSegment::LineSegment(Point &obj1, Point &obj2)
 {
-     setEnd1(obj1);
-     setEnd2(obj2);
+     setEnd1(obj1&);
+     setEnd2(obj2&);
 }
 
 /**************************************************************
@@ -30,7 +30,7 @@ LineSegment::LineSegment(Point &obj1, Point &obj2)
 **************************************************************/
 void LineSegment::setEnd1(Point &input)
 {
-    end1 = input;
+    end1 = input&;
 }
 
 /**************************************************************
@@ -40,7 +40,7 @@ void LineSegment::setEnd1(Point &input)
 **************************************************************/
 void LineSegment::setEnd2(Point &input)
 {
-    end2 = input;
+    end2 = input&;
 }
 
 /**************************************************************
