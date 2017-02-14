@@ -29,8 +29,8 @@ Point::Point(double inputX, double inputY) {
  * anything in.
 **************************************************************/
 Point::Point() {
-    x = 0;
-    y = 0;
+    setXCoord(0.0);
+    setYCoord(0.0);
 }
 
 // Getter Functions
