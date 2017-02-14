@@ -36,5 +36,12 @@ int main() {
     std::cout << "\n\nThe length between p4 and p5 is " << length << std::endl;
     std::cout << "The slope between p4 and p5 is " << slope << std::endl;
 
+    Point p6;
+    Point p7;
+
+    LineSegment ls3(p6, p7);
+
+    std::cout << "\nSlope between p6 and p7 is " << ls3.slope();
+
     return 0;
 }
