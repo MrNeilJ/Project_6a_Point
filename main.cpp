@@ -3,13 +3,7 @@
 #include "LineSegment.hpp"
 
 int main() {
-    /*
 
-
-    LineSegment ls3(p9,p9);
-    std::cout << "\n\nLength from p7 to p8 is: " << ls3.length() << std::endl;
-    std::cout << "Slope for p7 to p8 is: " << ls3.slope() << std::endl;
-*/
     Point p1(-1.5, 0.0);
     Point p2(1.5, 4.0);
 
